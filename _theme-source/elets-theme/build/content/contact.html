@@ -1,0 +1,166 @@
+<!-- ══════════════════════════════════════════════════ PAGE HEAD -->
+<section class="page-head noise">
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grid-lines" aria-hidden="true"></div>
+  <div class="shell relative">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Contact</li></ol>
+    </nav>
+    <h1 data-split>Talk to the <em class="serif-i grad-text">secretariat</em></h1>
+    <p class="lead">
+      One team handles delegates, speakers, partners and press. Pick the desk that fits and
+      you will hear back within one working day.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ DESKS -->
+<section class="section" style="padding-top:var(--sp-6)">
+  <div class="shell shell-wide">
+    <div class="grid g-4" data-reveal-group>
+      <a class="card card--glow" href="#contact-form" data-reveal="up">
+        <div class="card__body">
+          <span class="mega__ico"><svg width="17" height="17" aria-hidden="true"><use href="#i-ticket"/></svg></span>
+          <h3 class="h5 mt-3">Delegate registration</h3>
+          <p class="muted" style="font-size:var(--fs-sm)">Passes, government rates, group bookings and badge changes.</p>
+          <p class="mt-auto" style="font-size:var(--fs-sm)">
+            <span class="link">registration@eletsonline.com</span><br>
+            <span class="mono muted">+91 92899 55093</span>
+          </p>
+        </div>
+      </a>
+
+      <a class="card card--glow" href="#contact-form" data-reveal="up">
+        <div class="card__body">
+          <span class="mega__ico"><svg width="17" height="17" aria-hidden="true"><use href="#i-mic"/></svg></span>
+          <h3 class="h5 mt-3">Speaking opportunities</h3>
+          <p class="muted" style="font-size:var(--fs-sm)">Session proposals, speaker nominations and programme queries.</p>
+          <p class="mt-auto" style="font-size:var(--fs-sm)">
+            <span class="link">secretariat@eletsonline.com</span><br>
+            <span class="mono muted">+91 88606 51641</span>
+          </p>
+        </div>
+      </a>
+
+      <a class="card card--glow" href="sponsors.html#enquire" data-reveal="up">
+        <div class="card__body">
+          <span class="mega__ico"><svg width="17" height="17" aria-hidden="true"><use href="#i-spark"/></svg></span>
+          <h3 class="h5 mt-3">Partnerships</h3>
+          <p class="muted" style="font-size:var(--fs-sm)">Sponsorship tiers, exhibition stands and annual programmes.</p>
+          <p class="mt-auto" style="font-size:var(--fs-sm)">
+            <span class="link">partnerships@eletsonline.com</span><br>
+            <span class="mono muted">Deck sent same day</span>
+          </p>
+        </div>
+      </a>
+
+      <a class="card card--glow" href="#contact-form" data-reveal="up">
+        <div class="card__body">
+          <span class="mega__ico"><svg width="17" height="17" aria-hidden="true"><use href="#i-book"/></svg></span>
+          <h3 class="h5 mt-3">Press &amp; media</h3>
+          <p class="muted" style="font-size:var(--fs-sm)">Accreditation, media kit, high-resolution imagery and interviews.</p>
+          <p class="mt-auto" style="font-size:var(--fs-sm)">
+            <span class="link">press@eletsonline.com</span><br>
+            <span class="mono muted">Accreditation closes 7 days out</span>
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FORM + OFFICES -->
+<section class="section" id="contact-form" style="padding-top:0">
+  <div class="shell shell-wide">
+    <div class="grid split" style="--split:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(2rem,4vw,4rem);align-items:start">
+
+      <div class="card" style="padding:clamp(1.5rem,3.5vw,3rem)">
+        <span class="eyebrow">Send a message</span>
+        <h2 class="h3 mt-4">How can we help?</h2>
+        <form class="mt-8" data-demo="Message received — the right desk will reply within one working day.">
+          <div class="field-row">
+            <div class="field"><label for="c-name">Your name <span class="req">*</span></label><input class="input" id="c-name" name="name" required autocomplete="name"></div>
+            <div class="field"><label for="c-email">Email <span class="req">*</span></label><input class="input" id="c-email" name="email" type="email" required autocomplete="email"></div>
+          </div>
+          <div class="field-row mt-5">
+            <div class="field"><label for="c-org">Organisation</label><input class="input" id="c-org" name="org" autocomplete="organization"></div>
+            <div class="field"><label for="c-phone">Phone</label><input class="input" id="c-phone" name="phone" type="tel" autocomplete="tel"></div>
+          </div>
+          <div class="field mt-5">
+            <label for="c-topic">Which desk? <span class="req">*</span></label>
+            <select class="select" id="c-topic" name="topic" required>
+              <option value="">Choose one…</option>
+              <option>Delegate registration</option>
+              <option>Speaking opportunity</option>
+              <option>Sponsorship or exhibition</option>
+              <option>Press &amp; media</option>
+              <option>Magazine subscription</option>
+              <option>Awards nomination</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field mt-5">
+            <label for="c-msg">Message <span class="req">*</span></label>
+            <textarea class="textarea" id="c-msg" name="message" required placeholder="Tell us what you need and which event it relates to."></textarea>
+          </div>
+          <label class="check mt-5"><input type="checkbox"><span>Also send me the monthly calendar drop. No sponsor mail.</span></label>
+          <button class="btn btn-primary btn-lg mt-6" type="submit">Send message <svg class="btn__icon" width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+          <p class="mono dim mt-4">We reply within one working day, Monday to Friday, 09:30–18:30 IST.</p>
+        </form>
+      </div>
+
+      <aside class="side-sticky stack-lg">
+        <div class="map" style="aspect-ratio:4/3">
+          <div class="map__grid" aria-hidden="true"></div>
+          <div class="pin">
+            <span class="pin__dot" aria-hidden="true"></span>
+            <strong style="font-size:var(--fs-sm)">Noida — head office</strong>
+            <span class="mono muted">Sector 62</span>
+          </div>
+        </div>
+
+        <div class="card" style="padding:var(--sp-5)">
+          <h3 class="h5">Noida</h3>
+          <p class="muted mt-3" style="font-size:var(--fs-sm)">
+            Elets Technomedia Pvt Ltd<br>
+            Stellar IT Park, Sector 62<br>
+            Noida, Uttar Pradesh 201309<br>
+            India
+          </p>
+          <button class="btn btn-soft btn-sm mt-4" data-copy="Stellar IT Park, Sector 62, Noida, Uttar Pradesh 201309, India">Copy address</button>
+        </div>
+
+        <div class="card" style="padding:var(--sp-5)">
+          <h3 class="h5">Dubai</h3>
+          <p class="muted mt-3" style="font-size:var(--fs-sm)">
+            Elets Technomedia FZ-LLC<br>
+            Dubai<br>
+            United Arab Emirates
+          </p>
+        </div>
+
+        <div class="card" style="padding:var(--sp-5)">
+          <h3 class="h5">Follow</h3>
+          <div class="flex gap-2 mt-4">
+            <a class="icon-btn" href="#" aria-label="LinkedIn"><svg width="15" height="15"><use href="#i-in"/></svg></a>
+            <a class="icon-btn" href="#" aria-label="X"><svg width="14" height="14"><use href="#i-tw"/></svg></a>
+            <a class="icon-btn" href="#" aria-label="YouTube"><svg width="16" height="16"><use href="#i-yt"/></svg></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FAQ -->
+<section class="section" style="padding-top:0">
+  <div class="shell shell-narrow">
+    <div class="sec-head"><div><span class="sec-head__kicker mono">Quick answers</span><h2 data-split>Before you write</h2></div></div>
+
+    <div class="acc"><button class="acc__btn" aria-expanded="false">Do government officers pay to attend?<span class="acc__ico" aria-hidden="true"></span></button><div class="acc__panel"><div><p>No. Serving officers of central and state government, PSUs and regulatory bodies attend every Elets event free of charge. Register with your official email address and the fee is waived automatically.</p></div></div></div>
+    <div class="acc"><button class="acc__btn" aria-expanded="false">How do I nominate a speaker?<span class="acc__ico" aria-hidden="true"></span></button><div class="acc__panel"><div><p>Use the speaking submission form on the registration page, or write to the secretariat. Nominations are reviewed fortnightly by the programme committee; the agenda closes six weeks before each event.</p></div></div></div>
+    <div class="acc"><button class="acc__btn" aria-expanded="false">Can I get the magazine in print?<span class="acc__ico" aria-hidden="true"></span></button><div class="acc__panel"><div><p>Yes. Serving government officers and academic institutions receive the print edition free on request. Everyone else can read online free or take a paid print subscription.</p></div></div></div>
+    <div class="acc"><button class="acc__btn" aria-expanded="false">How do I get press accreditation?<span class="acc__ico" aria-hidden="true"></span></button><div class="acc__panel"><div><p>Write to the press desk with your outlet and a recent byline. Accreditation closes seven days before each event; the media kit and high-resolution imagery are shared on approval.</p></div></div></div>
+    <div class="acc"><button class="acc__btn" aria-expanded="false">Where do I send an awards nomination?<span class="acc__ico" aria-hidden="true"></span></button><div class="acc__panel"><div><p>Through the form above, choosing "Awards nomination". Entries are assessed by an independent jury; Elets does not vote.</p></div></div></div>
+  </div>
+</section>

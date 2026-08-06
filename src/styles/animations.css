@@ -1,0 +1,359 @@
+/* ==========================================================================
+   ELETS EVENTS — MOTION
+   animations.css · keyframes, scroll-reveal primitives, motion guidelines
+   --------------------------------------------------------------------------
+   MOTION RULES
+   1. Motion clarifies hierarchy. Nothing moves without a reason.
+   2. Entrances: 500–900ms, --ease-out, translate ≤ 28px, never opacity-only.
+   3. Interactions: 160–280ms. Fast enough to feel like a direct response.
+   4. Only animate transform / opacity / filter. Never width, top or margin.
+   5. Stagger sibling reveals by 60–90ms. Cap a run at ~8 items.
+   6. Every scroll-driven effect must survive prefers-reduced-motion.
+   ========================================================================== */
+
+/* ---------------------------------------------------- 1 · REVEAL PRIMITIVE */
+/* Elements opt in with data-reveal; JS (or the no-JS fallback) adds .in.     */
+[data-reveal] {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.75s var(--ease-out), transform 0.85s var(--ease-out),
+    filter 0.75s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+[data-reveal="up"] {
+  transform: translate3d(0, 30px, 0);
+}
+[data-reveal="down"] {
+  transform: translate3d(0, -24px, 0);
+}
+[data-reveal="left"] {
+  transform: translate3d(34px, 0, 0);
+}
+[data-reveal="right"] {
+  transform: translate3d(-34px, 0, 0);
+}
+[data-reveal="scale"] {
+  transform: scale(0.94);
+}
+[data-reveal="blur"] {
+  filter: blur(12px);
+  transform: translate3d(0, 18px, 0);
+}
+[data-reveal="clip"] {
+  clip-path: inset(0 0 100% 0);
+  opacity: 1;
+  transition: clip-path 0.95s var(--ease-out);
+}
+[data-reveal].in {
+  opacity: 1;
+  transform: none;
+  filter: none;
+  clip-path: inset(0 0 0 0);
+}
+
+/* ---------------------------------------------------- 2 · TEXT REVEAL */
+/* JS splits headings into .line > .word; each word rides up behind a mask.  */
+.split-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+  margin-bottom: -0.06em;
+}
+.split-word {
+  display: inline-block;
+  transform: translate3d(0, 110%, 0) rotate(3deg);
+  opacity: 0;
+  transition: transform 0.9s var(--ease-out), opacity 0.7s var(--ease-out);
+  will-change: transform;
+}
+.split.in .split-word {
+  transform: none;
+  opacity: 1;
+}
+
+/* character-level ticker, used on the loading counter */
+.char {
+  display: inline-block;
+}
+
+/* ---------------------------------------------------- 3 · KEYFRAMES */
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(0.75);
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(0.7);
+    opacity: 0.9;
+  }
+  70%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes loaderPulse {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    border-radius: 13px;
+  }
+  50% {
+    transform: scale(0.82) rotate(90deg);
+    border-radius: 22px;
+  }
+}
+
+@keyframes paneIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes drawTick {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -16px, 0);
+  }
+}
+
+@keyframes driftX {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(22px, -12px, 0);
+  }
+}
+
+@keyframes spinSlow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes auroraShift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(4%, -3%, 0) scale(1.12);
+  }
+  66% {
+    transform: translate3d(-3%, 4%, 0) scale(0.94);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes scrollHint {
+  0% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+/* ---------------------------------------------------- 4 · APPLIED MOTION */
+.float {
+  animation: floatY 7s var(--ease-in-out) infinite;
+}
+.float-slow {
+  animation: floatY 11s var(--ease-in-out) infinite;
+}
+.drift {
+  animation: driftX 14s var(--ease-in-out) infinite;
+}
+.spin-slow {
+  animation: spinSlow 26s linear infinite;
+}
+.aurora span {
+  animation: auroraShift 22s var(--ease-in-out) infinite;
+}
+.aurora span:nth-child(2) {
+  animation-duration: 28s;
+  animation-delay: -6s;
+}
+.aurora span:nth-child(3) {
+  animation-duration: 34s;
+  animation-delay: -12s;
+}
+
+.fade-up {
+  animation: fadeUp 0.85s var(--ease-out) both;
+}
+.d-1 { animation-delay: 0.08s; }
+.d-2 { animation-delay: 0.16s; }
+.d-3 { animation-delay: 0.24s; }
+.d-4 { animation-delay: 0.32s; }
+.d-5 { animation-delay: 0.4s; }
+.d-6 { animation-delay: 0.48s; }
+
+/* skeleton shimmer for lazily-loaded media */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--canvas-2) 25%,
+    var(--surface-2) 50%,
+    var(--canvas-2) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s linear infinite;
+}
+
+/* scroll hint bar in the hero */
+.scroll-hint {
+  width: 1px;
+  height: 54px;
+  background: var(--line-strong);
+  overflow: hidden;
+  position: relative;
+}
+.scroll-hint::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--ink);
+  animation: scrollHint 2.4s var(--ease-in-out) infinite;
+}
+
+/* ---------------------------------------------------- 5 · MAGNETIC */
+.magnetic {
+  will-change: transform;
+  transition: transform 0.45s var(--ease-out);
+}
+.magnetic__inner {
+  display: inline-flex;
+  will-change: transform;
+  transition: transform 0.45s var(--ease-out);
+}
+
+/* 3D tilt container */
+.tilt {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.tilt__layer {
+  transform: translateZ(38px);
+}
+
+/* parallax layer — JS sets --py */
+.parallax {
+  will-change: transform;
+  transform: translate3d(0, var(--py, 0px), 0);
+}
+
+/* ---------------------------------------------------- 6 · THEME SWAP
+   `.theming` is added to <html> for ~260ms while the theme flips, so every
+   surface, border and glyph crosses over together instead of snapping. It is
+   removed straight afterwards — no permanent transition cost, and nothing
+   fights the scroll animations. */
+html.theming,
+html.theming *,
+html.theming *::before,
+html.theming *::after {
+  transition: background-color 0.22s linear, border-color 0.22s linear,
+    color 0.22s linear, fill 0.22s linear, stroke 0.22s linear,
+    box-shadow 0.22s linear, opacity 0.22s linear !important;
+  transition-delay: 0s !important;
+}
+
+/* ---------------------------------------------------- 7 · REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-reveal],
+  .split-word {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+    clip-path: none !important;
+  }
+  .marquee__track {
+    animation: none !important;
+  }
+  .aurora span {
+    animation: none !important;
+  }
+  .cursor,
+  .cursor-ring {
+    display: none !important;
+  }
+  .hero__canvas {
+    display: none;
+  }
+}
+
+/* No-JS safety net: nothing stays invisible if scripts fail to load. */
+.no-js [data-reveal],
+.no-js .split-word {
+  opacity: 1 !important;
+  transform: none !important;
+  filter: none !important;
+  clip-path: none !important;
+}
+.no-js .loader {
+  display: none;
+}

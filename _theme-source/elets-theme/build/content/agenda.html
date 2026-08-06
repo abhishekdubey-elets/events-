@@ -1,0 +1,328 @@
+<!-- ══════════════════════════════════════════════════ PAGE HEAD -->
+<section class="page-head noise">
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grid-lines" aria-hidden="true"></div>
+  <div class="shell shell-wide relative">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="event.html">India Energy Expo 2026</a></li>
+        <li aria-current="page">Agenda</li>
+      </ol>
+    </nav>
+
+    <div class="grid split" style="--split:minmax(0,1.3fr) minmax(0,.7fr);gap:clamp(2rem,4vw,4rem);align-items:end">
+      <div>
+        <h1 data-split>Two days, three tracks, <em class="serif-i grad-text">one calendar</em></h1>
+        <p class="lead">
+          Build your own day. Filter by track, search the session titles, and bookmark
+          what matters — your selections are saved in this browser.
+        </p>
+      </div>
+      <div class="kpi-strip" data-reveal="up">
+        <div class="kpi"><b data-count="2">0</b><span>Days</span></div>
+        <div class="kpi"><b data-count="3">0</b><span>Tracks</span></div>
+        <div class="kpi"><b data-count="18">0</b><span>Sessions</span></div>
+        <div class="kpi"><b data-count="60" data-count-suf="+">0</b><span>Speakers</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ CONTROLS -->
+<section class="section-sm" style="padding-top:var(--sp-5)">
+  <div class="shell shell-wide">
+    <div class="tabs" role="tablist" aria-label="Conference days">
+      <button role="tab" id="t-d1" aria-controls="p-d1" aria-selected="true">Day one · Tue 18 Aug</button>
+      <button role="tab" id="t-d2" aria-controls="p-d2" aria-selected="false" tabindex="-1">Day two · Wed 19 Aug</button>
+      <button role="tab" id="t-saved" aria-controls="p-saved" aria-selected="false" tabindex="-1">My agenda</button>
+    </div>
+
+    <div class="grid mt-6 split" style="--split:minmax(0,1fr) auto auto;gap:var(--sp-4);align-items:center">
+      <div class="search">
+        <svg width="16" height="16" aria-hidden="true"><use href="#i-search"/></svg>
+        <label class="sr-only" for="ag-search">Search sessions</label>
+        <input class="input" id="ag-search" type="search" placeholder="Search sessions, speakers or rooms…" data-search="#day-one">
+      </div>
+      <button class="btn btn-soft" data-expand-all="#day-one">Expand all</button>
+      <a class="btn btn-primary" href="registration.html">Register <svg class="btn__icon" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+
+    <div class="filters mt-5" data-filters="#day-one" role="group" aria-label="Filter by track">
+      <span class="filters__pill" aria-hidden="true"></span>
+      <button data-filter="all" aria-pressed="true">All tracks</button>
+      <button data-filter="plenary" aria-pressed="false">Plenary</button>
+      <button data-filter="grid" aria-pressed="false">Grid &amp; storage</button>
+      <button data-filter="ai" aria-pressed="false">AI &amp; data</button>
+      <button data-filter="policy" aria-pressed="false">Policy &amp; finance</button>
+      <button data-filter="urban" aria-pressed="false">Urban</button>
+    </div>
+
+    <div class="flex wrap gap-4 mt-5" aria-label="Track colour key">
+      <span class="tag tag-dot track-energy">Plenary</span>
+      <span class="tag tag-dot track-health">Grid &amp; storage</span>
+      <span class="tag tag-dot track-ai">AI &amp; data</span>
+      <span class="tag tag-dot track-gov">Policy &amp; finance</span>
+      <span class="tag tag-dot track-city">Urban</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ DAY ONE -->
+<section class="section" style="padding-top:var(--sp-6)">
+  <div class="shell shell-wide">
+    <div role="tabpanel" class="tabpanel" id="p-d1" aria-labelledby="t-d1">
+      <div class="agenda" id="day-one">
+        <div class="agenda__progress" aria-hidden="true"></div>
+
+        <article class="slot is-open track-energy" data-cat="plenary" data-search-text="Registration coffee networking foyer">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="true">
+            <span class="slot__time">08:30 — 09:30</span>
+            <span>
+              <span class="slot__title">Registration, coffee and badge collection</span>
+              <span class="slot__tags"><span class="tag tag-dot">Plenary</span><span class="tag">Foyer</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Badges are printed on arrival — bring photo ID. The exhibition floor opens at 08:45 and the delegate lounge stays open all day.</p>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-energy" data-cat="plenary" data-search-text="Inaugural plenary grid 2035 Gaurav Gupta Ashok Meena main hall">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">09:30 — 10:15</span>
+            <span>
+              <span class="slot__title">Inaugural plenary: the grid India will need in 2035</span>
+              <span class="slot__tags"><span class="tag tag-dot">Plenary</span><span class="tag">Main hall</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Ministers, regulators and state utility chairs open the Expo with the demand picture to 2035 — and what has to be procured, financed and skilled before then.</p>
+            <div class="slot__speakers">
+              <span class="mini-speaker"><img src="assets/img/speakers/sp-03.svg" alt="" width="42" height="42" loading="lazy" decoding="async"><span><b>Gaurav Gupta, IAS</b><span>Additional Chief Secretary, Energy, Government of Karnataka</span></span></span>
+              <span class="mini-speaker"><img src="assets/img/speakers/sp-09.svg" alt="" width="42" height="42" loading="lazy" decoding="async"><span><b>Ashok K.K. Meena</b><span>Secretary, Ministry of Jal Shakti</span></span></span>
+            </div>
+            <button class="btn btn-soft btn-sm mt-5" data-bookmark="d1-s2" aria-pressed="false"><svg width="14" height="14" aria-hidden="true"><use href="#i-bookmark"/></svg> Add to my agenda</button>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-ai" data-cat="ai" data-search-text="Forecasting demand AI state utilities Shailesh Kumar Gaurav Duggal track A">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">10:30 — 11:15</span>
+            <span>
+              <span class="slot__title">Forecasting demand with AI: what three state utilities learned</span>
+              <span class="slot__tags"><span class="tag tag-dot">AI &amp; data</span><span class="tag">Track A</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>A working session on load forecasting models in production — data quality, procurement routes and the governance needed before a model touches dispatch.</p>
+            <div class="slot__speakers">
+              <span class="mini-speaker"><img src="assets/img/speakers/sp-13.svg" alt="" width="42" height="42" loading="lazy" decoding="async"><span><b>Dr. Shailesh Kumar</b><span>Chief Data Scientist, CoE AI/ML, Jio</span></span></span>
+              <span class="mini-speaker"><img src="assets/img/speakers/sp-14.svg" alt="" width="42" height="42" loading="lazy" decoding="async"><span><b>Gaurav Duggal</b><span>SVP &amp; Head of Data Analytics &amp; AI, Jio Platforms Limited</span></span></span>
+            </div>
+            <button class="btn btn-soft btn-sm mt-5" data-bookmark="d1-s3" aria-pressed="false"><svg width="14" height="14" aria-hidden="true"><use href="#i-bookmark"/></svg> Add to my agenda</button>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-health" data-cat="grid" data-search-text="Storage procurement battery pumped hydro tariff track B">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">10:30 — 11:15</span>
+            <span>
+              <span class="slot__title">Storage procurement: batteries, pumped hydro and the tariff that makes either work</span>
+              <span class="slot__tags"><span class="tag tag-dot">Grid &amp; storage</span><span class="tag">Track B</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Parallel to the AI session. Procurement officers walk through two completed tenders line by line, including what they would write differently.</p>
+            <button class="btn btn-soft btn-sm mt-5" data-bookmark="d1-s4" aria-pressed="false"><svg width="14" height="14" aria-hidden="true"><use href="#i-bookmark"/></svg> Add to my agenda</button>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-gov" data-cat="policy" data-search-text="Public private partnership procurement clean energy Amit Sharma track B">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">11:30 — 12:15</span>
+            <span>
+              <span class="slot__title">Public–private partnership: faster procurement for clean energy</span>
+              <span class="slot__tags"><span class="tag tag-dot">Policy &amp; finance</span><span class="tag">Track B</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Where PPP structures have unlocked capacity and where they have stalled, drawn from the PSU Summit's collaboration-for-innovation track.</p>
+            <div class="slot__speakers">
+              <span class="mini-speaker"><img src="assets/img/speakers/sp-02.svg" alt="" width="42" height="42" loading="lazy" decoding="async"><span><b>Amit Sharma, IAS</b><span>Secretary &amp; MD SIDCO, UT Administration Ladakh</span></span></span>
+            </div>
+            <button class="btn btn-soft btn-sm mt-5" data-bookmark="d1-s5" aria-pressed="false"><svg width="14" height="14" aria-hidden="true"><use href="#i-bookmark"/></svg> Add to my agenda</button>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-energy" data-cat="plenary" data-search-text="Lunch exhibition floor networking">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">12:30 — 14:00</span>
+            <span>
+              <span class="slot__title">Lunch on the exhibition floor</span>
+              <span class="slot__tags"><span class="tag tag-dot">Plenary</span><span class="tag">Expo hall</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Ninety minutes, deliberately. Most of the useful conversations at an Elets summit happen in this window rather than in the sessions.</p>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-city" data-cat="urban" data-search-text="Urban energy cooling transport municipal balance sheet D Thara track A">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">14:00 — 14:45</span>
+            <span>
+              <span class="slot__title">Urban energy: cooling, transport and the municipal balance sheet</span>
+              <span class="slot__tags"><span class="tag tag-dot">Urban</span><span class="tag">Track A</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Municipal commissioners on the three line items that actually move a city's energy bill, and how they were financed.</p>
+            <div class="slot__speakers">
+              <span class="mini-speaker"><img src="assets/img/speakers/sp-10.svg" alt="" width="42" height="42" loading="lazy" decoding="async"><span><b>D Thara, IAS</b><span>Additional Secretary, Ministry of Housing and Urban Affairs</span></span></span>
+            </div>
+            <button class="btn btn-soft btn-sm mt-5" data-bookmark="d1-s7" aria-pressed="false"><svg width="14" height="14" aria-hidden="true"><use href="#i-bookmark"/></svg> Add to my agenda</button>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-gov" data-cat="policy" data-search-text="Green hydrogen offtake mission targets roundtable closed door">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">15:00 — 16:00</span>
+            <span>
+              <span class="slot__title">Closed-door roundtable: green hydrogen, from target to signed offtake</span>
+              <span class="slot__tags"><span class="tag tag-dot">Policy &amp; finance</span><span class="tag">Boardroom</span><span class="tag">Invitation only</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Twenty seats, Chatham House Rule, not recorded. Request an invitation through the secretariat when you register.</p>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-energy" data-cat="plenary" data-search-text="Awards Energy Excellence dinner ballroom">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">19:00 — late</span>
+            <span>
+              <span class="slot__title">Energy Excellence Awards &amp; networking dinner</span>
+              <span class="slot__tags"><span class="tag tag-dot">Plenary</span><span class="tag">Ballroom</span></span>
+            </span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Jury citations read from the stage, followed by dinner. Black tie is not expected; most of the room comes straight from the last session.</p>
+            <button class="btn btn-soft btn-sm mt-5" data-bookmark="d1-s9" aria-pressed="false"><svg width="14" height="14" aria-hidden="true"><use href="#i-bookmark"/></svg> Add to my agenda</button>
+          </div></div></div>
+        </article>
+      </div>
+      <p class="empty hide mt-6" data-empty>No sessions match those filters.</p>
+    </div>
+
+    <!-- ── DAY TWO ── -->
+    <div role="tabpanel" class="tabpanel" id="p-d2" aria-labelledby="t-d2" hidden>
+      <div class="agenda" id="day-two">
+        <div class="agenda__progress" aria-hidden="true"></div>
+
+        <article class="slot is-open track-energy">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="true">
+            <span class="slot__time">09:30 — 10:15</span>
+            <span><span class="slot__title">Day two keynote: transmission, and the money that has to move first</span><span class="slot__tags"><span class="tag tag-dot">Plenary</span><span class="tag">Main hall</span></span></span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body">
+            <p>Evacuating renewables from where they are generated to where they are consumed — the single largest unfunded line in the transition.</p>
+            <div class="slot__speakers">
+              <span class="mini-speaker"><img src="assets/img/speakers/sp-12.svg" alt="" width="42" height="42" loading="lazy" decoding="async"><span><b>Himanshu Pant</b><span>Chief Digital Officer, Adani Group</span></span></span>
+            </div>
+          </div></div></div>
+        </article>
+
+        <article class="slot track-ai">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">10:30 — 11:15</span>
+            <span><span class="slot__title">Model governance: who signs off before an algorithm touches dispatch</span><span class="slot__tags"><span class="tag tag-dot">AI &amp; data</span><span class="tag">Track A</span></span></span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body"><p>A practical session on accountability structures, audit trails and the regulatory questions nobody has answered yet.</p></div></div></div>
+        </article>
+
+        <article class="slot track-health">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">11:30 — 12:15</span>
+            <span><span class="slot__title">Skilling the sector: the workforce a rebuilt grid needs</span><span class="slot__tags"><span class="tag tag-dot">Grid &amp; storage</span><span class="tag">Track B</span></span></span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body"><p>Drawn from the National Skill &amp; Education Summit programme — what the ITIs and polytechnics are actually producing, versus what utilities are hiring for.</p></div></div></div>
+        </article>
+
+        <article class="slot track-gov">
+          <span class="slot__dot" aria-hidden="true"></span>
+          <button class="slot__head" aria-expanded="false">
+            <span class="slot__time">14:00 — 15:00</span>
+            <span><span class="slot__title">Closing plenary: what we agreed, and what we did not</span><span class="slot__tags"><span class="tag tag-dot">Policy &amp; finance</span><span class="tag">Main hall</span></span></span>
+            <span class="slot__toggle" aria-hidden="true"><svg width="13" height="13"><use href="#i-plus"/></svg></span>
+          </button>
+          <div class="slot__panel"><div><div class="slot__body"><p>Track chairs report back. The written summary is circulated to every delegate within a week, with dissent recorded rather than smoothed over.</p></div></div></div>
+        </article>
+      </div>
+    </div>
+
+    <!-- ── MY AGENDA ── -->
+    <div role="tabpanel" class="tabpanel" id="p-saved" aria-labelledby="t-saved" hidden>
+      <div class="empty">
+        <svg width="26" height="26" style="margin-inline:auto" aria-hidden="true"><use href="#i-bookmark"/></svg>
+        <p class="mt-4">Sessions you bookmark appear here.</p>
+        <p style="font-size:var(--fs-xs)">Open a session on Day one or Day two and choose “Add to my agenda”. Selections are stored in this browser only — nothing is sent to a server.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ CTA -->
+<section class="section-sm">
+  <div class="shell">
+    <div class="cta noise" data-reveal="scale">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="relative">
+        <span class="eyebrow" style="color:rgba(255,255,255,.55)">Agenda closes six weeks out</span>
+        <h2 class="mt-5" data-split>Want a session on this programme?</h2>
+        <p>The committee reviews submissions fortnightly. Bring an argument and evidence; product pitches are declined.</p>
+        <div class="flex wrap gap-3 mt-8">
+          <a class="btn btn-brand btn-lg magnetic" href="registration.html#speaking" data-magnet="0.2"><span class="magnetic__inner">Submit a session <svg class="btn__icon" width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn-glass btn-lg" href="event.html">Back to the event</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="sticky-bar" data-sticky-bar=".page-head">
+  <div class="sticky-bar__inner">
+    <div class="sticky-bar__meta">
+      <strong style="font-size:var(--fs-sm)">India Energy Expo 2026 · Agenda</strong>
+      <span class="mono muted" style="display:block">18–19 August · New Delhi</span>
+    </div>
+    <div class="flex gap-2">
+      <a class="btn btn-soft btn-sm" href="event.html">Event</a>
+      <a class="btn btn-primary btn-sm" href="registration.html">Register <svg class="btn__icon" width="13" height="13" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</div>

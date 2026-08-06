@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 1280" width="960" height="1280" role="img" aria-label="digitalLEARNING April 2026 cover">
+  <defs><radialGradient id="g0" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FF5A2B" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#FF5A2B" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FFB020" stop-opacity="0.73"/>
+        <stop offset="100%" stop-color="#FFB020" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FF5A2B" stop-opacity="0.61"/>
+        <stop offset="100%" stop-color="#FF5A2B" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g3" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FFB020" stop-opacity="0.49"/>
+        <stop offset="100%" stop-color="#FFB020" stop-opacity="0"/>
+      </radialGradient>
+  <filter id="gr" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.95" numOctaves="3" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0" in="n" result="ng"/>
+    <feComponentTransfer in="ng" result="nt"><feFuncA type="linear" slope="0.12"/></feComponentTransfer>
+    <feComposite operator="over" in="nt" in2="SourceGraphic"/>
+  </filter>
+    <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1A0E08" stop-opacity=".55"/>
+      <stop offset="55%" stop-color="#1A0E08" stop-opacity=".1"/>
+      <stop offset="100%" stop-color="#1A0E08" stop-opacity=".92"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="1280" fill="#1A0E08"/>
+  <g filter="url(#gr)"><circle cx="537" cy="252" r="914" fill="url(#g0)" opacity="0.75"/><circle cx="865" cy="368" r="808" fill="url(#g1)" opacity="0.87"/><circle cx="80" cy="457" r="778" fill="url(#g2)" opacity="0.71"/><circle cx="493" cy="948" r="713" fill="url(#g3)" opacity="0.51"/></g>
+  <rect width="960" height="1280" fill="url(#veil)"/>
+  <text x="60" y="150" font-family="Georgia,'Times New Roman',serif" font-size="96" font-weight="700" fill="#fff" letter-spacing="-3">digitalLEARNING</text>
+  <line x1="60" y1="190" x2="900" y2="190" stroke="#fff" stroke-opacity=".35"/>
+  <text x="60" y="238" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="26" letter-spacing="4" fill="#fff" fill-opacity=".75">APRIL 2026</text>
+  <text x="60" y="1090" font-family="Georgia,'Times New Roman',serif" font-size="58" fill="#fff" fill-opacity=".95">Skilling</text>
+  <text x="60" y="1158" font-family="Georgia,'Times New Roman',serif" font-size="58" fill="#fff" fill-opacity=".95">Bharat</text>
+  <text x="60" y="1224" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="22" letter-spacing="3" fill="#fff" fill-opacity=".6">ELETS TECHNOMEDIA</text>
+</svg>

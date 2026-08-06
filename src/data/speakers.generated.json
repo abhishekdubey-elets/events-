@@ -1,0 +1,256 @@
+[
+  {
+    "slug": "b-d-mishra",
+    "name": "Brig. B. D. Mishra",
+    "role": "Hon'ble Lieutenant Governor UT Administration Ladakh",
+    "org": "",
+    "image": "/assets/img/speakers/sp-01.svg",
+    "alt": "Brig. B. D. Mishra",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "energy"
+    ],
+    "searchText": "Brig. B. D. Mishra Hon'ble Lieutenant Governor UT Administration Ladakh"
+  },
+  {
+    "slug": "amit-sharma",
+    "name": "Amit Sharma, IAS",
+    "role": "Secretary (IT, Transport, RD, S&T) & MD SIDCO UT Administration Ladakh",
+    "org": "",
+    "image": "/assets/img/speakers/sp-02.svg",
+    "alt": "Amit Sharma, IAS",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "city"
+    ],
+    "searchText": "Amit Sharma, IAS Secretary (IT, Transport, RD, S&T) & MD SIDCO UT Administration Ladakh"
+  },
+  {
+    "slug": "gaurav-gupta",
+    "name": "Gaurav Gupta, IAS",
+    "role": "Additional Chief Secretary, Energy Government of Karnataka",
+    "org": "",
+    "image": "/assets/img/speakers/sp-03.svg",
+    "alt": "Gaurav Gupta, IAS",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "energy"
+    ],
+    "searchText": "Gaurav Gupta, IAS Additional Chief Secretary, Energy Government of Karnataka"
+  },
+  {
+    "slug": "akash-tripathi",
+    "name": "Shri Akash Tripathi, IAS",
+    "role": "CEO MyGov · MD & CEO, Digital India Corporation MeitY, Government of India",
+    "org": "",
+    "image": "/assets/img/speakers/sp-04.svg",
+    "alt": "Shri Akash Tripathi, IAS",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "ai"
+    ],
+    "searchText": "Shri Akash Tripathi, IAS CEO MyGov · MD & CEO, Digital India Corporation MeitY, Government of India"
+  },
+  {
+    "slug": "thampy-koshy",
+    "name": "Thampy Koshy",
+    "role": "Managing Director & CEO Open Network for Digital Commerce (ONDC)",
+    "org": "",
+    "image": "/assets/img/speakers/sp-05.svg",
+    "alt": "Thampy Koshy",
+    "badges": [
+      "Industry"
+    ],
+    "cats": [
+      "ind",
+      "bfsi"
+    ],
+    "searchText": "Thampy Koshy Managing Director & CEO Open Network for Digital Commerce (ONDC)"
+  },
+  {
+    "slug": "meeta-r-lochan",
+    "name": "Meeta R Lochan, IAS",
+    "role": "Secretary, NCBC Ministry of Social Justice & Empowerment",
+    "org": "",
+    "image": "/assets/img/speakers/sp-06.svg",
+    "alt": "Meeta R Lochan, IAS",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov"
+    ],
+    "searchText": "Meeta R Lochan, IAS Secretary, NCBC Ministry of Social Justice & Empowerment"
+  },
+  {
+    "slug": "rajit-punhani",
+    "name": "Rajit Punhani, IAS",
+    "role": "Chief Executive Officer Food Safety and Standards Authority of India",
+    "org": "",
+    "image": "/assets/img/speakers/sp-07.svg",
+    "alt": "Rajit Punhani, IAS",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "health"
+    ],
+    "searchText": "Rajit Punhani, IAS Chief Executive Officer Food Safety and Standards Authority of India"
+  },
+  {
+    "slug": "rajendra-kumar",
+    "name": "Dr. Rajendra Kumar, IAS",
+    "role": "Secretary Ministry of Home Affairs",
+    "org": "",
+    "image": "/assets/img/speakers/sp-08.svg",
+    "alt": "Dr. Rajendra Kumar, IAS",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "ai"
+    ],
+    "searchText": "Dr. Rajendra Kumar, IAS Secretary Ministry of Home Affairs"
+  },
+  {
+    "slug": "ashok-k-k-meena",
+    "name": "Ashok K.K. Meena",
+    "role": "Secretary, Drinking Water & Sanitation Ministry of Jal Shakti",
+    "org": "",
+    "image": "/assets/img/speakers/sp-09.svg",
+    "alt": "Ashok K.K. Meena",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "energy"
+    ],
+    "searchText": "Ashok K.K. Meena Secretary, Drinking Water & Sanitation Ministry of Jal Shakti"
+  },
+  {
+    "slug": "d-thara",
+    "name": "D Thara, IAS",
+    "role": "Additional Secretary Ministry of Housing and Urban Affairs",
+    "org": "",
+    "image": "/assets/img/speakers/sp-10.svg",
+    "alt": "D Thara, IAS",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "city"
+    ],
+    "searchText": "D Thara, IAS Additional Secretary Ministry of Housing and Urban Affairs"
+  },
+  {
+    "slug": "deepak-bagla",
+    "name": "Deepak Bagla",
+    "role": "Mission Director, Atal Innovation Mission NITI Aayog",
+    "org": "",
+    "image": "/assets/img/speakers/sp-11.svg",
+    "alt": "Deepak Bagla",
+    "badges": [
+      "Government"
+    ],
+    "cats": [
+      "gov",
+      "ai"
+    ],
+    "searchText": "Deepak Bagla Mission Director, Atal Innovation Mission NITI Aayog"
+  },
+  {
+    "slug": "himanshu-pant",
+    "name": "Himanshu Pant",
+    "role": "Chief Digital Officer Adani Group",
+    "org": "",
+    "image": "/assets/img/speakers/sp-12.svg",
+    "alt": "Himanshu Pant",
+    "badges": [
+      "Industry"
+    ],
+    "cats": [
+      "ind",
+      "energy"
+    ],
+    "searchText": "Himanshu Pant Chief Digital Officer Adani Group"
+  },
+  {
+    "slug": "shailesh-kumar",
+    "name": "Dr. Shailesh Kumar",
+    "role": "Chief Data Scientist, CoE AI/ML Jio",
+    "org": "",
+    "image": "/assets/img/speakers/sp-13.svg",
+    "alt": "Dr. Shailesh Kumar",
+    "badges": [
+      "Industry"
+    ],
+    "cats": [
+      "ind",
+      "ai"
+    ],
+    "searchText": "Dr. Shailesh Kumar Chief Data Scientist, CoE AI/ML Jio"
+  },
+  {
+    "slug": "gaurav-duggal",
+    "name": "Gaurav Duggal",
+    "role": "SVP & Head of Data Analytics & AI Jio Platforms Limited",
+    "org": "",
+    "image": "/assets/img/speakers/sp-14.svg",
+    "alt": "Gaurav Duggal",
+    "badges": [
+      "Industry"
+    ],
+    "cats": [
+      "ind",
+      "ai"
+    ],
+    "searchText": "Gaurav Duggal SVP & Head of Data Analytics & AI Jio Platforms Limited"
+  },
+  {
+    "slug": "deepak-gupta",
+    "name": "Deepak Gupta",
+    "role": "Group Chief Technology Officer CARS24",
+    "org": "",
+    "image": "/assets/img/speakers/sp-15.svg",
+    "alt": "Deepak Gupta",
+    "badges": [
+      "Industry"
+    ],
+    "cats": [
+      "ind",
+      "bfsi"
+    ],
+    "searchText": "Deepak Gupta Group Chief Technology Officer CARS24"
+  },
+  {
+    "slug": "ravi-gupta",
+    "name": "Dr Ravi Gupta",
+    "role": "Founder, CEO & Editor-in-Chief Elets Technomedia",
+    "org": "",
+    "image": "/assets/img/speakers/sp-16.svg",
+    "alt": "Dr Ravi Gupta",
+    "badges": [
+      "Industry"
+    ],
+    "cats": [
+      "ind"
+    ],
+    "searchText": "Dr Ravi Gupta Founder, CEO & Editor-in-Chief Elets Technomedia"
+  }
+]

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="AI in Governance">
+  <defs><radialGradient id="g0" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#1B4DFF" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#1B4DFF" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.73"/>
+        <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#1B4DFF" stop-opacity="0.61"/>
+        <stop offset="100%" stop-color="#1B4DFF" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g3" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.49"/>
+        <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+      </radialGradient>
+  <filter id="gr" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0" in="n" result="ng"/>
+    <feComponentTransfer in="ng" result="nt"><feFuncA type="linear" slope="0.1"/></feComponentTransfer>
+    <feComposite operator="over" in="nt" in2="SourceGraphic"/>
+  </filter>
+    <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="30%" stop-color="#0B1020" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0B1020" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#0B1020"/>
+  <g filter="url(#gr)"><circle cx="317" cy="335" r="577" fill="url(#g0)" opacity="0.53"/><circle cx="69" cy="326" r="749" fill="url(#g1)" opacity="0.64"/><circle cx="1320" cy="795" r="1100" fill="url(#g2)" opacity="0.53"/><circle cx="1078" cy="884" r="1137" fill="url(#g3)" opacity="0.61"/></g>
+  <g><line x1="0" y1="0" x2="0" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="100" y1="0" x2="100" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="200" y1="0" x2="200" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="300" y1="0" x2="300" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="400" y1="0" x2="400" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="500" y1="0" x2="500" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="600" y1="0" x2="600" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="700" y1="0" x2="700" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="800" y1="0" x2="800" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="900" y1="0" x2="900" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="1000" y1="0" x2="1000" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="1100" y1="0" x2="1100" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="1200" y1="0" x2="1200" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="1300" y1="0" x2="1300" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="1400" y1="0" x2="1400" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="1500" y1="0" x2="1500" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="1600" y1="0" x2="1600" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="0" x2="1600" y2="0" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="90" x2="1600" y2="90" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="180" x2="1600" y2="180" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="270" x2="1600" y2="270" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="360" x2="1600" y2="360" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="450" x2="1600" y2="450" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="540" x2="1600" y2="540" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="630" x2="1600" y2="630" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="720" x2="1600" y2="720" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="810" x2="1600" y2="810" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="900" x2="1600" y2="900" stroke="#fff" stroke-opacity=".05"/></g>
+  <g><circle cx="1248" cy="252" r="194" fill="none" stroke="#fff" stroke-opacity="0.140" stroke-width="1.5"/><circle cx="1248" cy="252" r="301" fill="none" stroke="#fff" stroke-opacity="0.120" stroke-width="1.5"/><circle cx="1248" cy="252" r="449" fill="none" stroke="#fff" stroke-opacity="0.100" stroke-width="1.5"/><circle cx="1248" cy="252" r="568" fill="none" stroke="#fff" stroke-opacity="0.080" stroke-width="1.5"/><circle cx="1248" cy="252" r="715" fill="none" stroke="#fff" stroke-opacity="0.060" stroke-width="1.5"/></g>
+  <rect width="1600" height="900" fill="url(#veil)"/>
+  <text x="64" y="784" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="30" letter-spacing="6" fill="#fff" fill-opacity=".7">KEYNOTE</text>
+  <text x="64" y="848" font-family="Georgia,'Times New Roman',serif" font-size="62" fill="#fff" fill-opacity=".96">AI in Governance</text>
+</svg>

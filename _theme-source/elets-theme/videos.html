@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Video Library — Elets Events</title>
+<meta name="description" content="Keynotes, panels and fireside chats from 1,000+ Elets conferences. Over 10 million views.">
+<meta name="theme-color" content="#f6f5f2">
+<link rel="canonical" href="https://events.eletsonline.com/videos.html">
+<link rel="icon" href="assets/img/brand/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/brand/favicon.svg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Elets Events">
+<meta property="og:title" content="Video Library — Elets Events">
+<meta property="og:description" content="Keynotes, panels and fireside chats from 1,000+ Elets conferences. Over 10 million views.">
+<meta property="og:image" content="assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-normal-400-700-latin.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="assets/fonts/instrument-serif-italic-400-latin.woff2" crossorigin>
+
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+
+<script>
+/* Theme bootstrap — runs before first paint so there is never a flash. */
+(function(){try{var t=localStorage.getItem('elets-theme');
+if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}
+document.documentElement.setAttribute('data-theme',t);
+document.querySelector('meta[name="theme-color"]').setAttribute('content',t==='dark'?'#08090c':'#f6f5f2');
+}catch(e){}
+document.documentElement.classList.remove('no-js');})();
+</script>
+</head>
+
+<body>
+
+<div class="loader" role="status" aria-live="polite" aria-label="Loading">
+  <div class="loader__inner">
+    <span class="loader__mark" aria-hidden="true"></span>
+    <span class="loader__bar"><span class="loader__fill"></span></span>
+    <span class="loader__meta mono">
+      <span>Elets Events</span><span data-loader-num>000</span>
+    </span>
+  </div>
+</div>
+
+<div class="progress" aria-hidden="true"><div class="progress__fill"></div></div>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ══════════════════════════════════════════════════ ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+<symbol id="i-arrow-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15M13 6l6 6-6 6"/></symbol>
+<symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 20v-1.5a4 4 0 00-4-4H6a4 4 0 00-4 4V20"/><circle cx="9" cy="7" r="3.4"/><path d="M22 20v-1.5a4 4 0 00-3-3.87M16.5 3.7a4 4 0 010 6.6"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.6c0-.9 1-1.4 1.7-1L18.4 10c.7.4.7 1.5 0 1.9L9.7 17.3c-.7.4-1.7 0-1.7-1z"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></symbol>
+<symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+<symbol id="i-in" viewBox="0 0 24 24" fill="currentColor"><path d="M6.9 8.7H3.7V20h3.2zM5.3 3.6a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8M20.3 20v-6.2c0-3.3-1.8-4.8-4.1-4.8-1.9 0-2.8 1-3.3 1.8V8.7H9.7V20H13v-6.2c0-1.5.9-2.3 2-2.3s1.9.7 1.9 2.3V20z"/></symbol>
+<symbol id="i-tw" viewBox="0 0 24 24" fill="currentColor"><path d="M17.3 3h3.1l-6.8 7.8L21.7 21h-6.3l-4.9-6.4L4.8 21H1.7l7.3-8.3L1.6 3h6.4l4.5 5.9zm-1.1 16.1h1.7L7.9 4.8H6z"/></symbol>
+<symbol id="i-yt" viewBox="0 0 24 24" fill="currentColor"><path d="M22.5 7.2a2.8 2.8 0 00-1.9-2C18.9 4.7 12 4.7 12 4.7s-6.9 0-8.6.5a2.8 2.8 0 00-1.9 2C1 8.9 1 12 1 12s0 3.1.5 4.8a2.8 2.8 0 001.9 2c1.7.5 8.6.5 8.6.5s6.9 0 8.6-.5a2.8 2.8 0 001.9-2c.5-1.7.5-4.8.5-4.8s0-3.1-.5-4.8M9.8 15.3V8.7l5.7 3.3z"/></symbol>
+<symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7.5 10.5L12 15l4.5-4.5M4 20h16"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.9v2.6a1.9 1.9 0 01-2.1 1.9 18.9 18.9 0 01-8.2-2.9 18.6 18.6 0 01-5.7-5.7A18.9 18.9 0 012.1 4.6 1.9 1.9 0 014 2.5h2.6a1.9 1.9 0 011.9 1.6c.1 1 .3 1.9.7 2.8a1.9 1.9 0 01-.4 2L7.6 10a15 15 0 005.7 5.7l1.1-1.1a1.9 1.9 0 012-.4c.9.4 1.8.6 2.8.7a1.9 1.9 0 011.6 1.9z"/></symbol>
+<symbol id="i-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9V7a2 2 0 012-2h14a2 2 0 012 2v2a3 3 0 000 6v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2a3 3 0 000-6z"/><path d="M14 5v14" stroke-dasharray="2 2.6"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0013 0M12 17.5V21M8.5 21h7"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 016.5 2H20v16H6.5A2.5 2.5 0 004 20.5z"/><path d="M4 18.5A2.5 2.5 0 016.5 16H20v6H6.5A2.5 2.5 0 014 19.5z"/></symbol>
+<symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5.5" width="14" height="13" rx="3"/><path d="M16.5 10.5l5-3v9l-5-3z"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="2"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.1 5.9 5.9 2.1-5.9 2.1L12 18.5l-2.1-5.9L4 10.5l5.9-2.1zM19 16l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18 15 15 0 010-18"/></symbol>
+<symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="i-bookmark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3.5h12a1 1 0 011 1v16l-7-4.2-7 4.2v-16a1 1 0 011-1z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-1.6 3.6L16 11H5"/></symbol>
+</defs></svg>
+
+<!-- ══════════════════════════════════════════════════ NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="Elets Events — home">
+      <img src="assets/img/brand/logo.svg" alt="" width="34" height="34">
+      <span class="brand__name">Elets<span class="brand__sub">Events Platform</span></span>
+    </a>
+
+    <nav class="nav__menu" aria-label="Primary">
+      <div class="relative">
+        <button class="nav__link" data-mega="mega-events" aria-expanded="false" aria-haspopup="true">
+          Events <svg class="nav__chev" width="13" height="13" aria-hidden="true"><use href="#i-chev"/></svg>
+        </button>
+        <div class="mega" id="mega-events" role="region" aria-label="Events menu">
+          <div class="mega__grid">
+            <div class="mega__col">
+              <h4>By sector</h4>
+              <a class="mega__item" href="event.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-spark"/></svg></span><span><strong>Artificial Intelligence</strong><span>India AI Summit, National AI Summit on Water</span></span></a>
+              <a class="mega__item" href="event.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-users"/></svg></span><span><strong>Healthcare</strong><span>Healthcare Innovation, Patient Centricity</span></span></a>
+              <a class="mega__item" href="event.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-book"/></svg></span><span><strong>Education &amp; Skills</strong><span>World Education Summit, Campus to Career</span></span></a>
+              <a class="mega__item" href="event.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-flag"/></svg></span><span><strong>Governance &amp; PSU</strong><span>National PSU Summit, Digital Innovation</span></span></a>
+            </div>
+            <div class="mega__col">
+              <h4>Also running</h4>
+              <a class="mega__item" href="event.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-globe"/></svg></span><span><strong>Smart &amp; Resilient Cities</strong><span>Urban Innovation Summit</span></span></a>
+              <a class="mega__item" href="event.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-ticket"/></svg></span><span><strong>Banking &amp; Fintech</strong><span>NBFC100, BFSI Gamechanger, World Fintech</span></span></a>
+              <a class="mega__item" href="event.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-grid"/></svg></span><span><strong>Energy &amp; Infrastructure</strong><span>India Energy Expo</span></span></a>
+              <a class="mega__item" href="agenda.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-clock"/></svg></span><span><strong>Full agenda</strong><span>Tracks, sessions and speakers</span></span></a>
+            </div>
+            <a class="mega__feature" href="event.html">
+              <img src="assets/img/events/ev-01.svg" alt="" width="1600" height="1000" loading="lazy" decoding="async">
+              <span class="tag tag-live" style="align-self:start">Registrations open</span>
+              <strong style="font-size:var(--fs-md);margin-top:.6rem;display:block">India Energy Expo 2026</strong>
+              <span style="font-size:var(--fs-xs);opacity:.75">18–19 August 2026 · New Delhi</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="nav__link" href="speakers.html">Speakers</a>
+      <a class="nav__link" href="agenda.html">Agenda</a>
+
+      <div class="relative">
+        <button class="nav__link" aria-current="page" data-mega="mega-media" aria-expanded="false" aria-haspopup="true">
+          Media <svg class="nav__chev" width="13" height="13" aria-hidden="true"><use href="#i-chev"/></svg>
+        </button>
+        <div class="mega" id="mega-media" role="region" aria-label="Media menu">
+          <div class="mega__grid">
+            <div class="mega__col">
+              <h4>Watch &amp; read</h4>
+              <a class="mega__item" href="videos.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-video"/></svg></span><span><strong>Video library</strong><span>Keynotes, panels and fireside chats</span></span></a>
+              <a class="mega__item" href="magazines.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-book"/></svg></span><span><strong>Magazine library</strong><span>eGov · digitalLEARNING · eHEALTH · BFSI</span></span></a>
+            </div>
+            <div class="mega__col">
+              <h4>Around the events</h4>
+              <a class="mega__item" href="news.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-spark"/></svg></span><span><strong>News &amp; insights</strong><span>Reporting from the floor</span></span></a>
+              <a class="mega__item" href="gallery.html"><span class="mega__ico"><svg width="16" height="16"><use href="#i-grid"/></svg></span><span><strong>Gallery</strong><span>Photography from recent summits</span></span></a>
+            </div>
+            <a class="mega__feature" href="magazines.html">
+              <img src="assets/img/magazines/mag-01.svg" alt="" width="960" height="1280" loading="lazy" decoding="async">
+              <span class="tag tag-solid" style="align-self:start">Latest issue</span>
+              <strong style="font-size:var(--fs-md);margin-top:.6rem;display:block">eGov · July 2026</strong>
+              <span style="font-size:var(--fs-xs);opacity:.75">The AI-Ready State</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <a class="nav__link" href="sponsors.html">Sponsors</a>
+      <a class="nav__link" href="about.html">About</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch colour theme">
+        <svg class="i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm magnetic" href="registration.html" data-magnet="0.24">
+        <span class="magnetic__inner">Register <svg class="btn__icon" width="14" height="14" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </a>
+      <button class="burger" aria-expanded="false" aria-controls="drawer" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer">
+  <nav aria-label="Mobile">
+    <a href="index.html">Home</a>
+    <a href="event.html">Events</a>
+    <a href="speakers.html">Speakers</a>
+    <a href="agenda.html">Agenda</a>
+    <a href="videos.html">Videos</a>
+    <a href="magazines.html">Magazines</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="news.html">News</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a class="btn btn-brand btn-lg btn-block mt-6" href="registration.html">Register your delegation</a>
+</div>
+
+<main id="main">
+
+<!-- ══════════════════════════════════════════════════ PAGE HEAD (dark) -->
+<section class="band-dark page-head noise">
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grid-lines" aria-hidden="true"></div>
+  <div class="shell shell-wide relative">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li><a href="index.html#videos">Media</a></li><li aria-current="page">Video library</li></ol>
+    </nav>
+    <div class="grid split" style="--split:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(2rem,4vw,4rem);align-items:end">
+      <div>
+        <h1 data-split>Every keynote, <em class="serif-i grad-text">kept</em></h1>
+        <p class="lead">Two decades of plenaries, panels and fireside chats from Elets stages. Ten million views and counting.</p>
+      </div>
+      <div class="kpi-strip" style="background:transparent" data-reveal="up">
+        <div class="kpi"><b data-count="10" data-count-suf="M+">0</b><span>Views</span></div>
+        <div class="kpi"><b data-count="2400" data-count-suf="+">0</b><span>Sessions</span></div>
+        <div class="kpi"><b data-count="7">0</b><span>Sectors</span></div>
+      </div>
+    </div>
+
+    <!-- featured -->
+    <a class="video video--hero mt-9" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-reveal="scale">
+      <img src="assets/img/videos/vid-01.svg" alt="AI in governance keynote" width="1600" height="900" fetchpriority="high" decoding="async">
+      <span class="video__dur">42:16</span>
+      <span class="video__play"><i><svg width="22" height="22" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+      <span class="video__meta">
+        <span class="tag tag-solid" style="margin-bottom:.6rem">Featured</span>
+        <h3 style="font-size:var(--fs-xl);letter-spacing:var(--tracking-tight)">AI in governance: from pilots to production</h3>
+        <p>Elets India AI Summit 2026 · Eros Hotel, Nehru Place, New Delhi</p>
+      </span>
+    </a>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ ROWS -->
+<section class="band-dark section" style="padding-top:var(--sp-9)">
+  <div class="shell shell-wide">
+    <h2 class="h4 mb-4">Most watched</h2>
+    <div class="vid-row" role="list">
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="ai gov" data-search-text="AI in governance: from pilots to production India AI Summit 2026 · New Delhi" data-reveal="up">
+        <img src="assets/img/videos/vid-01.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">42:16</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>AI in governance: from pilots to production</h3><p>India AI Summit 2026 · New Delhi</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="gov ai" data-search-text="Public sector cybersecurity in an AI era Public Sector Day · Delhi" data-reveal="up">
+        <img src="assets/img/videos/vid-06.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">45:20</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Public sector cybersecurity in an AI era</h3><p>Public Sector Day · Delhi</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="bfsi" data-search-text="Inside the NBFC tech stack 23rd NBFC100 Tech Summit · Chennai" data-reveal="up">
+        <img src="assets/img/videos/vid-02.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">31:04</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Inside the NBFC tech stack</h3><p>23rd NBFC100 Tech Summit · Chennai</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="ai" data-search-text="Water intelligence: AI on the distribution network National AI Summit on Water 2026" data-reveal="up">
+        <img src="assets/img/videos/vid-04.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">38:11</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Water intelligence: AI on the distribution network</h3><p>National AI Summit on Water 2026</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="energy" data-search-text="The energy transition, financed India Energy Expo preview" data-reveal="up">
+        <img src="assets/img/videos/vid-07.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">36:58</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>The energy transition, financed</h3><p>India Energy Expo preview</p></span>
+      </a>
+    </div>
+
+    <h2 class="h4 mb-4 mt-8">Recently added</h2>
+    <div class="vid-row" role="list">
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="energy" data-search-text="The energy transition, financed India Energy Expo preview" data-reveal="up">
+        <img src="assets/img/videos/vid-07.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">36:58</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>The energy transition, financed</h3><p>India Energy Expo preview</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="bfsi" data-search-text="The ONDC effect on Indian commerce 2nd World Fintech Summit · Bengaluru" data-reveal="up">
+        <img src="assets/img/videos/vid-08.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">29:12</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>The ONDC effect on Indian commerce</h3><p>2nd World Fintech Summit · Bengaluru</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="edu" data-search-text="Campus to career: what employers actually ask for Campus to Career Summit · Bengaluru" data-reveal="up">
+        <img src="assets/img/videos/vid-05.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">24:39</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Campus to career: what employers actually ask for</h3><p>Campus to Career Summit · Bengaluru</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="city" data-search-text="Building smart wards 6th Urban Innovation Summit" data-reveal="up">
+        <img src="assets/img/videos/vid-03.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">27:52</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Building smart wards</h3><p>6th Urban Innovation Summit</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="ai gov" data-search-text="AI in governance: from pilots to production India AI Summit 2026 · New Delhi" data-reveal="up">
+        <img src="assets/img/videos/vid-01.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">42:16</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>AI in governance: from pilots to production</h3><p>India AI Summit 2026 · New Delhi</p></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ FULL LIBRARY -->
+<section class="section">
+  <div class="shell shell-wide">
+    <div class="sec-head">
+      <div><span class="sec-head__kicker mono">Browse everything</span><h2 data-split>The full library</h2></div>
+      <div class="sec-head__aside" style="min-width:280px">
+        <div class="search">
+          <svg width="16" height="16" aria-hidden="true"><use href="#i-search"/></svg>
+          <label class="sr-only" for="v-search">Search videos</label>
+          <input class="input" id="v-search" type="search" placeholder="Search sessions…" data-search="#video-grid">
+        </div>
+      </div>
+    </div>
+
+    <div class="filters mb-8" data-filters="#video-grid" role="group" aria-label="Filter videos by sector">
+      <span class="filters__pill" aria-hidden="true"></span>
+      <button data-filter="all" aria-pressed="true">All</button>
+      <button data-filter="ai" aria-pressed="false">AI</button>
+      <button data-filter="gov" aria-pressed="false">Governance</button>
+      <button data-filter="bfsi" aria-pressed="false">Banking</button>
+      <button data-filter="edu" aria-pressed="false">Education</button>
+      <button data-filter="city" aria-pressed="false">Smart Cities</button>
+      <button data-filter="energy" aria-pressed="false">Energy</button>
+    </div>
+
+    <div class="grid g-3" id="video-grid" data-reveal-group role="list" aria-live="polite">
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="ai gov" data-search-text="AI in governance: from pilots to production India AI Summit 2026 · New Delhi" data-reveal="up">
+        <img src="assets/img/videos/vid-01.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">42:16</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>AI in governance: from pilots to production</h3><p>India AI Summit 2026 · New Delhi</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="bfsi" data-search-text="Inside the NBFC tech stack 23rd NBFC100 Tech Summit · Chennai" data-reveal="up">
+        <img src="assets/img/videos/vid-02.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">31:04</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Inside the NBFC tech stack</h3><p>23rd NBFC100 Tech Summit · Chennai</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="city" data-search-text="Building smart wards 6th Urban Innovation Summit" data-reveal="up">
+        <img src="assets/img/videos/vid-03.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">27:52</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Building smart wards</h3><p>6th Urban Innovation Summit</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="ai" data-search-text="Water intelligence: AI on the distribution network National AI Summit on Water 2026" data-reveal="up">
+        <img src="assets/img/videos/vid-04.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">38:11</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Water intelligence: AI on the distribution network</h3><p>National AI Summit on Water 2026</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="edu" data-search-text="Campus to career: what employers actually ask for Campus to Career Summit · Bengaluru" data-reveal="up">
+        <img src="assets/img/videos/vid-05.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">24:39</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Campus to career: what employers actually ask for</h3><p>Campus to Career Summit · Bengaluru</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="gov ai" data-search-text="Public sector cybersecurity in an AI era Public Sector Day · Delhi" data-reveal="up">
+        <img src="assets/img/videos/vid-06.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">45:20</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>Public sector cybersecurity in an AI era</h3><p>Public Sector Day · Delhi</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="energy" data-search-text="The energy transition, financed India Energy Expo preview" data-reveal="up">
+        <img src="assets/img/videos/vid-07.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">36:58</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>The energy transition, financed</h3><p>India Energy Expo preview</p></span>
+      </a>
+      <a class="video" role="listitem" href="#video-modal" data-modal-open="video-modal" data-cursor="Play" data-cat="bfsi" data-search-text="The ONDC effect on Indian commerce 2nd World Fintech Summit · Bengaluru" data-reveal="up">
+        <img src="assets/img/videos/vid-08.svg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="video__dur">29:12</span>
+        <span class="video__play"><i><svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg></i></span>
+        <span class="video__meta"><h3>The ONDC effect on Indian commerce</h3><p>2nd World Fintech Summit · Bengaluru</p></span>
+      </a>
+    </div>
+    <p class="empty hide mt-6" data-empty>No sessions match that filter yet.</p>
+
+    <nav class="pager mt-9" aria-label="Pagination">
+      <a href="#" aria-current="page">1</a><a href="#">2</a><a href="#">3</a>
+      <span aria-hidden="true">…</span><a href="#">96</a>
+      <a href="#" aria-label="Next page"><svg width="15" height="15" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+    </nav>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ CTA -->
+<section class="section-sm">
+  <div class="shell">
+    <div class="cta noise" data-reveal="scale">
+      <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <div class="relative">
+        <span class="eyebrow" style="color:rgba(255,255,255,.55)">New sessions every month</span>
+        <h2 class="mt-5" data-split>Be in the next one, not just watching it.</h2>
+        <p>Sessions are published within three weeks of each summit. The people in them registered first.</p>
+        <div class="flex wrap gap-3 mt-8">
+          <a class="btn btn-brand btn-lg magnetic" href="registration.html" data-magnet="0.2"><span class="magnetic__inner">Register for the next event <svg class="btn__icon" width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn-glass btn-lg" href="magazines.html">Read the magazines</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="modal modal--video" id="video-modal" role="dialog" aria-modal="true" aria-label="Session video" aria-hidden="true">
+  <div class="modal__scrim"></div>
+  <div class="modal__card">
+    <button class="modal__close" data-modal-close aria-label="Close video"><svg width="15" height="15"><use href="#i-x"/></svg></button>
+    <div class="ratio ratio-16-9" style="background:#000">
+      <div style="display:grid;place-items:center;height:100%;color:rgba(255,255,255,.5);text-align:center;padding:2rem">
+        <div><svg width="38" height="38" aria-hidden="true"><use href="#i-play"/></svg><p class="mono mt-4">Drop your player embed here</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- ══════════════════════════════════════════════════ FOOTER -->
+<footer class="footer noise">
+  <div class="shell shell-wide relative">
+    <div class="footer__top">
+      <div>
+        <a class="brand" href="index.html" aria-label="Elets Events">
+          <img src="assets/img/brand/logo.svg" alt="" width="34" height="34">
+          <span class="brand__name" style="color:#fff">Elets<span class="brand__sub">Events Platform</span></span>
+        </a>
+        <p class="mt-5" style="color:rgba(255,255,255,.6);max-width:40ch">
+          India's leading B2B media house for governance, healthcare, education and
+          banking. Founded 2003. Offices in Noida and Dubai.
+        </p>
+        <form class="newsletter" data-demo="You're on the list — the next calendar drop is on its way.">
+          <label class="sr-only" for="nl">Email address</label>
+          <input class="input" id="nl" name="email" type="email" required placeholder="you@organisation.gov.in">
+          <button class="btn btn-brand" type="submit">Subscribe</button>
+        </form>
+        <p class="mt-3" style="font-size:11px;color:rgba(255,255,255,.4)">Monthly calendar drop. No sponsor mail. Unsubscribe anytime.</p>
+      </div>
+
+      <div class="footer__cols">
+        <div>
+          <h4>Events</h4>
+          <ul>
+            <li><a href="event.html">Upcoming conferences</a></li>
+            <li><a href="event.html">Past conferences</a></li>
+            <li><a href="agenda.html">Agenda &amp; tracks</a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li><a href="registration.html#speaking">Speak at an event</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Media</h4>
+          <ul>
+            <li><a href="videos.html">Video library</a></li>
+            <li><a href="magazines.html">eGov</a></li>
+            <li><a href="magazines.html">digitalLEARNING</a></li>
+            <li><a href="magazines.html">eHEALTH</a></li>
+            <li><a href="magazines.html">The Banking &amp; Finance Post</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Elets</a></li>
+            <li><a href="sponsors.html">Partner with us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="news.html">Newsroom</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Next up</h4>
+          <ul>
+            <li><a href="event.html">India Energy Expo · 18–19 Aug</a></li>
+            <li><a href="event.html">BFSI Gamechanger · Goa</a></li>
+            <li><a href="event.html">World Education Summit · Delhi</a></li>
+            <li><a href="event.html">Patient Centricity · Mumbai</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__offices">
+      <div class="office">
+        <h5>Noida — head office</h5>
+        <p>Stellar IT Park, Sector 62<br>Noida, Uttar Pradesh 201309<br>India</p>
+      </div>
+      <div class="office">
+        <h5>Dubai</h5>
+        <p>Elets Technomedia FZ-LLC<br>Dubai, United Arab Emirates</p>
+      </div>
+      <div class="office">
+        <h5>Secretariat</h5>
+        <p>
+          <a href="mailto:registration@eletsonline.com">registration@eletsonline.com</a><br>
+          <a href="mailto:partnerships@eletsonline.com">partnerships@eletsonline.com</a><br>
+          <a href="tel:+919289955093">+91 92899 55093</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer__word" aria-hidden="true">ELETS EVENTS</div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Elets Technomedia Pvt Ltd. All rights reserved.</span>
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg width="15" height="15"><use href="#i-in"/></svg></a>
+        <a href="#" aria-label="X"><svg width="14" height="14"><use href="#i-tw"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="16" height="16"><use href="#i-yt"/></svg></a>
+      </div>
+      <span>Privacy · Terms · Code of conduct</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/gsap.min.js" defer></script>
+<script src="assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/lenis.min.js" defer></script>
+<script src="assets/js/script.js" defer></script>
+<script src="assets/js/animations.js" defer></script>
+</body>
+</html>

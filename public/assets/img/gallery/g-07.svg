@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Awards Night">
+  <defs><radialGradient id="g0" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.85"/>
+        <stop offset="100%" stop-color="#F43F5E" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.73"/>
+        <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#F43F5E" stop-opacity="0.61"/>
+        <stop offset="100%" stop-color="#F43F5E" stop-opacity="0"/>
+      </radialGradient><radialGradient id="g3" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.49"/>
+        <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+      </radialGradient>
+  <filter id="gr" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" stitchTiles="stitch" result="n"/>
+    <feColorMatrix type="saturate" values="0" in="n" result="ng"/>
+    <feComponentTransfer in="ng" result="nt"><feFuncA type="linear" slope="0.1"/></feComponentTransfer>
+    <feComposite operator="over" in="nt" in2="SourceGraphic"/>
+  </filter>
+    <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="30%" stop-color="#1A0810" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#1A0810" stop-opacity=".9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="#1A0810"/>
+  <g filter="url(#gr)"><circle cx="805" cy="185" r="927" fill="url(#g0)" opacity="0.68"/><circle cx="161" cy="752" r="713" fill="url(#g1)" opacity="0.73"/><circle cx="370" cy="148" r="1026" fill="url(#g2)" opacity="0.88"/><circle cx="765" cy="1478" r="773" fill="url(#g3)" opacity="0.85"/></g>
+  <g><line x1="0" y1="0" x2="0" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="75" y1="0" x2="75" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="150" y1="0" x2="150" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="225" y1="0" x2="225" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="300" y1="0" x2="300" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="375" y1="0" x2="375" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="450" y1="0" x2="450" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="525" y1="0" x2="525" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="600" y1="0" x2="600" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="675" y1="0" x2="675" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="750" y1="0" x2="750" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="825" y1="0" x2="825" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="900" y1="0" x2="900" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="975" y1="0" x2="975" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="1050" y1="0" x2="1050" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="1125" y1="0" x2="1125" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="1200" y1="0" x2="1200" y2="1500" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="0" x2="1200" y2="0" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="150" x2="1200" y2="150" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="300" x2="1200" y2="300" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="450" x2="1200" y2="450" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="600" x2="1200" y2="600" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="750" x2="1200" y2="750" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="900" x2="1200" y2="900" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="1050" x2="1200" y2="1050" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="1200" x2="1200" y2="1200" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="1350" x2="1200" y2="1350" stroke="#fff" stroke-opacity=".05"/><line x1="0" y1="1500" x2="1200" y2="1500" stroke="#fff" stroke-opacity=".05"/></g>
+  <g><circle cx="936" cy="420" r="193" fill="none" stroke="#fff" stroke-opacity="0.140" stroke-width="1.5"/><circle cx="936" cy="420" r="316" fill="none" stroke="#fff" stroke-opacity="0.120" stroke-width="1.5"/><circle cx="936" cy="420" r="420" fill="none" stroke="#fff" stroke-opacity="0.100" stroke-width="1.5"/><circle cx="936" cy="420" r="552" fill="none" stroke="#fff" stroke-opacity="0.080" stroke-width="1.5"/><circle cx="936" cy="420" r="700" fill="none" stroke="#fff" stroke-opacity="0.060" stroke-width="1.5"/></g>
+  <rect width="1200" height="1500" fill="url(#veil)"/>
+  <text x="64" y="1384" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="30" letter-spacing="6" fill="#fff" fill-opacity=".7">ELETS 2026</text>
+  <text x="64" y="1448" font-family="Georgia,'Times New Roman',serif" font-size="62" fill="#fff" fill-opacity=".96">Awards Night</text>
+</svg>

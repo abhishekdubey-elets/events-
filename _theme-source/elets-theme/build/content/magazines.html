@@ -1,0 +1,223 @@
+<!-- ══════════════════════════════════════════════════ PAGE HEAD -->
+<section class="page-head noise">
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="grid-lines" aria-hidden="true"></div>
+  <div class="shell shell-wide relative">
+    <nav aria-label="Breadcrumb">
+      <ol class="crumbs"><li><a href="index.html">Home</a></li><li>Media</li><li aria-current="page">Magazine library</li></ol>
+    </nav>
+
+    <div class="grid split" style="--split:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(2rem,4vw,4.5rem);align-items:center">
+      <div>
+        <h1 data-split>Four titles. <em class="serif-i grad-text">Four million</em> readers a month.</h1>
+        <p class="lead">
+          eGov, digitalLEARNING, eHEALTH and The Banking &amp; Finance Post have reported
+          these sectors since long before the summits existed. Read online free, or download
+          the PDF edition.
+        </p>
+        <div class="flex wrap gap-3 mt-8">
+          <a class="btn btn-primary btn-lg magnetic" href="#subscribe" data-magnet="0.2"><span class="magnetic__inner">Subscribe free <svg class="btn__icon" width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></span></a>
+          <a class="btn btn-ghost btn-lg" href="#archive">Browse the archive</a>
+        </div>
+      </div>
+
+      <div class="mag" data-tilt="12" data-reveal="scale" style="max-width:340px;margin-inline:auto">
+        <div class="mag__cover">
+          <span class="mag__ribbon">Latest</span>
+          <img src="assets/img/magazines/mag-01.svg" alt="eGov, July 2026 — The AI-Ready State" width="960" height="1280" fetchpriority="high" decoding="async">
+        </div>
+        <div class="mag__info text-center">
+          <span class="mono muted">eGov · July 2026</span>
+          <h3 class="mt-2">The AI-Ready State</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ TITLES -->
+<section class="section" style="padding-top:var(--sp-8)">
+  <div class="shell shell-wide">
+    <div class="sec-head"><div><span class="sec-head__kicker mono">The four titles</span><h2 data-split>What each one covers</h2></div></div>
+    <div class="index-list" data-peek-list>
+      <a class="index-row" href="#archive" data-peek="assets/img/magazines/mag-01.svg">
+        <span class="index-row__n">01</span><span class="index-row__t">eGov</span>
+        <span class="index-row__c">E-governance, public sector technology, smart cities</span>
+        <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="index-row" href="#archive" data-peek="assets/img/magazines/mag-02.svg">
+        <span class="index-row__n">02</span><span class="index-row__t">digitalLEARNING</span>
+        <span class="index-row__c">Higher education, skilling, edtech and employability</span>
+        <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="index-row" href="#archive" data-peek="assets/img/magazines/mag-03.svg">
+        <span class="index-row__n">03</span><span class="index-row__t">eHEALTH</span>
+        <span class="index-row__c">Hospital systems, health policy, medtech and pharma</span>
+        <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+      <a class="index-row" href="#archive" data-peek="assets/img/magazines/mag-04.svg">
+        <span class="index-row__n">04</span><span class="index-row__t">The Banking &amp; Finance Post</span>
+        <span class="index-row__c">Banking, NBFC, insurance and fintech</span>
+        <svg width="17" height="17" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ ARCHIVE -->
+<section class="section" id="archive" style="padding-top:0">
+  <div class="shell shell-wide">
+    <div class="sec-head">
+      <div><span class="sec-head__kicker mono">Editions</span><h2 data-split>The archive</h2></div>
+      <div class="sec-head__aside" style="min-width:280px">
+        <div class="search">
+          <svg width="16" height="16" aria-hidden="true"><use href="#i-search"/></svg>
+          <label class="sr-only" for="m-search">Search editions</label>
+          <input class="input" id="m-search" type="search" placeholder="Search editions…" data-search="#mag-grid">
+        </div>
+      </div>
+    </div>
+
+    <div class="filters mb-8" data-filters="#mag-grid" role="group" aria-label="Filter by title">
+      <span class="filters__pill" aria-hidden="true"></span>
+      <button data-filter="all" aria-pressed="true">All titles</button>
+      <button data-filter="egov" aria-pressed="false">eGov</button>
+      <button data-filter="dl" aria-pressed="false">digitalLEARNING</button>
+      <button data-filter="eh" aria-pressed="false">eHEALTH</button>
+      <button data-filter="bfsi" aria-pressed="false">Banking &amp; Finance Post</button>
+    </div>
+
+    <div class="grid g-3" id="mag-grid" data-reveal-group aria-live="polite">
+      <article class="mag" data-tilt="10" data-cat="egov" data-search-text="eGov July 2026 The AI-Ready State" data-reveal="up">
+        <div class="mag__cover">
+          <span class="mag__ribbon">Latest</span>
+          <img src="assets/img/magazines/mag-01.svg" alt="eGov, July 2026 — The AI-Ready State" width="960" height="1280" loading="lazy" decoding="async">
+        </div>
+        <div class="mag__info">
+          <span class="mono muted">eGov · July 2026</span>
+          <h3 class="mt-2">The AI-Ready State</h3>
+          <p class="muted mt-2" style="font-size:var(--fs-xs)">How states are moving from AI pilots to production services.</p>
+          <div class="mag__actions">
+            <a class="btn btn-soft btn-sm" href="#">Read online</a>
+            <a class="btn btn-soft btn-sm" href="#" aria-label="Download eGov July 2026 as PDF"><svg width="14" height="14" aria-hidden="true"><use href="#i-dl"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="mag" data-tilt="10" data-cat="dl" data-search-text="digitalLEARNING July 2026 Campus to Career" data-reveal="up">
+        <div class="mag__cover">
+          
+          <img src="assets/img/magazines/mag-02.svg" alt="digitalLEARNING, July 2026 — Campus to Career" width="960" height="1280" loading="lazy" decoding="async">
+        </div>
+        <div class="mag__info">
+          <span class="mono muted">digitalLEARNING · July 2026</span>
+          <h3 class="mt-2">Campus to Career</h3>
+          <p class="muted mt-2" style="font-size:var(--fs-xs)">Employability, apprenticeships and the widening gap between syllabus and job.</p>
+          <div class="mag__actions">
+            <a class="btn btn-soft btn-sm" href="#">Read online</a>
+            <a class="btn btn-soft btn-sm" href="#" aria-label="Download digitalLEARNING July 2026 as PDF"><svg width="14" height="14" aria-hidden="true"><use href="#i-dl"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="mag" data-tilt="10" data-cat="eh" data-search-text="eHEALTH June 2026 Patient First by Design" data-reveal="up">
+        <div class="mag__cover">
+          
+          <img src="assets/img/magazines/mag-03.svg" alt="eHEALTH, June 2026 — Patient First by Design" width="960" height="1280" loading="lazy" decoding="async">
+        </div>
+        <div class="mag__info">
+          <span class="mono muted">eHEALTH · June 2026</span>
+          <h3 class="mt-2">Patient First by Design</h3>
+          <p class="muted mt-2" style="font-size:var(--fs-xs)">Designing hospital systems around the patient rather than the department.</p>
+          <div class="mag__actions">
+            <a class="btn btn-soft btn-sm" href="#">Read online</a>
+            <a class="btn btn-soft btn-sm" href="#" aria-label="Download eHEALTH June 2026 as PDF"><svg width="14" height="14" aria-hidden="true"><use href="#i-dl"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="mag" data-tilt="10" data-cat="bfsi" data-search-text="The Banking &amp; Finance Post June 2026 The NBFC Tech Stack" data-reveal="up">
+        <div class="mag__cover">
+          
+          <img src="assets/img/magazines/mag-04.svg" alt="The Banking &amp; Finance Post, June 2026 — The NBFC Tech Stack" width="960" height="1280" loading="lazy" decoding="async">
+        </div>
+        <div class="mag__info">
+          <span class="mono muted">The Banking &amp; Finance Post · June 2026</span>
+          <h3 class="mt-2">The NBFC Tech Stack</h3>
+          <p class="muted mt-2" style="font-size:var(--fs-xs)">What the 100 largest NBFCs actually run, and what they are replacing.</p>
+          <div class="mag__actions">
+            <a class="btn btn-soft btn-sm" href="#">Read online</a>
+            <a class="btn btn-soft btn-sm" href="#" aria-label="Download The Banking &amp; Finance Post June 2026 as PDF"><svg width="14" height="14" aria-hidden="true"><use href="#i-dl"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="mag" data-tilt="10" data-cat="egov" data-search-text="eGov May 2026 Water, Data and AI" data-reveal="up">
+        <div class="mag__cover">
+          
+          <img src="assets/img/magazines/mag-05.svg" alt="eGov, May 2026 — Water, Data and AI" width="960" height="1280" loading="lazy" decoding="async">
+        </div>
+        <div class="mag__info">
+          <span class="mono muted">eGov · May 2026</span>
+          <h3 class="mt-2">Water, Data and AI</h3>
+          <p class="muted mt-2" style="font-size:var(--fs-xs)">Distribution-network intelligence, from the National AI Summit on Water.</p>
+          <div class="mag__actions">
+            <a class="btn btn-soft btn-sm" href="#">Read online</a>
+            <a class="btn btn-soft btn-sm" href="#" aria-label="Download eGov May 2026 as PDF"><svg width="14" height="14" aria-hidden="true"><use href="#i-dl"/></svg></a>
+          </div>
+        </div>
+      </article>
+      <article class="mag" data-tilt="10" data-cat="dl" data-search-text="digitalLEARNING April 2026 Skilling Bharat" data-reveal="up">
+        <div class="mag__cover">
+          
+          <img src="assets/img/magazines/mag-06.svg" alt="digitalLEARNING, April 2026 — Skilling Bharat" width="960" height="1280" loading="lazy" decoding="async">
+        </div>
+        <div class="mag__info">
+          <span class="mono muted">digitalLEARNING · April 2026</span>
+          <h3 class="mt-2">Skilling Bharat</h3>
+          <p class="muted mt-2" style="font-size:var(--fs-xs)">The ITI and polytechnic system, measured against what employers hire for.</p>
+          <div class="mag__actions">
+            <a class="btn btn-soft btn-sm" href="#">Read online</a>
+            <a class="btn btn-soft btn-sm" href="#" aria-label="Download digitalLEARNING April 2026 as PDF"><svg width="14" height="14" aria-hidden="true"><use href="#i-dl"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p class="empty hide mt-6" data-empty>No editions match that filter.</p>
+
+    <nav class="pager mt-9" aria-label="Pagination">
+      <a href="#" aria-current="page">1</a><a href="#">2</a><a href="#">3</a>
+      <span aria-hidden="true">…</span><a href="#">124</a>
+      <a href="#" aria-label="Next page"><svg width="15" height="15" aria-hidden="true"><use href="#i-arrow-r"/></svg></a>
+    </nav>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════ SUBSCRIBE -->
+<section class="band-dark noise section" id="subscribe">
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="shell shell-narrow relative">
+    <div class="text-center">
+      <span class="eyebrow" style="justify-content:center">Free to public sector</span>
+      <h2 class="h2 mt-5" data-split>Get every edition in your inbox</h2>
+      <p class="lead mx-auto mt-5" style="text-align:center">
+        Choose the titles you want. Serving officers and academic institutions receive the
+        print edition free on request.
+      </p>
+    </div>
+
+    <form class="mt-8" data-demo="Subscribed — the next edition will arrive on publication.">
+      <div class="grid g-2">
+        <div class="field"><label for="s-name">Name <span class="req">*</span></label><input class="input" id="s-name" name="name" required autocomplete="name"></div>
+        <div class="field"><label for="s-email">Email <span class="req">*</span></label><input class="input" id="s-email" name="email" type="email" required autocomplete="email"></div>
+      </div>
+      <fieldset class="mt-6" style="border:0;padding:0;margin:0">
+        <legend class="mono muted mb-4">Which titles?</legend>
+        <div class="grid g-2">
+          <label class="check"><input type="checkbox" checked><span>eGov — governance &amp; public sector technology</span></label>
+          <label class="check"><input type="checkbox"><span>digitalLEARNING — education &amp; skilling</span></label>
+          <label class="check"><input type="checkbox"><span>eHEALTH — hospitals, policy &amp; medtech</span></label>
+          <label class="check"><input type="checkbox"><span>The Banking &amp; Finance Post — BFSI</span></label>
+        </div>
+      </fieldset>
+      <label class="check mt-5"><input type="checkbox"><span>I am a serving government officer or at an academic institution — send the print edition free.</span></label>
+      <button class="btn btn-brand btn-lg mt-6" type="submit">Subscribe <svg class="btn__icon" width="15" height="15" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </form>
+  </div>
+</section>

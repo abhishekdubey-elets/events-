@@ -1,0 +1,26 @@
+{
+  "name": "elets-events",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "theme:pages": "node tools/html-to-jsx.mjs",
+    "theme:chrome": "node tools/html-to-jsx.mjs --chrome",
+    "theme:data": "node tools/extract-data.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "node-html-parser": "6.1.13",
+    "typescript": "5.7.3"
+  }
+}
