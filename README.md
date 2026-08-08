@@ -134,6 +134,47 @@ the two visible-on-load faces can be preloaded by name.
 
 ---
 
+## Brand assets
+
+Everything in `public/assets/img/brand/` is generated from one source file —
+the official logo, kept at `tools/brand/logo-source.png` (150×78, white ink
+plus brand red `#ee3248`):
+
+```bash
+powershell -ExecutionPolicy Bypass -File tools/brand-assets.ps1
+```
+
+| File | Use |
+|---|---|
+| `lockup-on-light.png` / `-on-dark.png` | Header and footer, and the `Organization` logo in JSON-LD. The complete logo, URL line included |
+| `wordmark-on-light.png` / `-on-dark.png` | Wordmark-only crop. Not currently used — kept for anywhere too short for the full lockup |
+| `mark-96.png`, `mark-256.png` | The red `e`, cropped square — favicon, apple-touch, PWA manifest |
+
+Three things about the source drive the layout in `src/styles/brand.css`:
+
+- **It is white ink.** Invisible on the light theme. The theme's own
+  `--logo-filter` would fix that with `invert()`, but that swings the brand red
+  to cyan — so the `-on-light` files recolour only the white ink to `#0a0b0e`
+  and leave the red exactly as it is. The suffix names the *surface*, not the
+  artwork. The footer is a dark band in both themes and always takes `-on-dark`.
+- **It is a stacked lockup**, not a square mark — the theme had `.brand img`
+  hard-coded to 34×34. The header therefore drops the duplicate "Elets" text
+  and keeps a small `EVENTS PLATFORM` label instead.
+- **The URL line is only ~11px of the 68px source**, so the lockup has to be
+  tall enough to carry it: at 52px it renders ~8.4px and reads cleanly. The
+  sizes step down with `--nav-h` (52 / 46 / 42px against a 76 / 70 / 64px bar)
+  so the logo keeps ~12px of breathing room at every breakpoint. Do not shrink
+  it below ~42px — that is the floor where the URL stops being readable.
+
+**The source is only 150 px wide.** Fine for header, footer and the tab
+favicon; `mark-256.png` is upscaled and visibly soft, so it is the weak link
+for phone home-screen icons. Drop higher-resolution or vector art at
+`tools/brand/logo-source.png` and re-run the script — the crop bands are
+proportional to the source height, so they survive a resolution change of the
+same artwork.
+
+---
+
 ## Content
 
 Inherited from the theme, and unchanged. Event names, dates, cities, speaker

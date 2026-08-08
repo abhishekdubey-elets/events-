@@ -14,13 +14,11 @@ export default function SiteFooter() {
           <div className='footer__top'>
             <div>
               <Link className='brand' href='/' aria-label='Elets Events'>
-                <img src='/assets/img/brand/logo.svg' alt='' width='34' height='34' />
+                <img className='brand__lockup brand__lockup--on-dark' src='/assets/img/brand/lockup-on-dark.png' alt='' width='134' height='68' />
+                <img className='brand__lockup brand__lockup--on-light' src='/assets/img/brand/lockup-on-light.png' alt='' width='134' height='68' />
                 {' '}
-                <span className='brand__name' style={{ color: '#fff' }}>
-                  Elets
-                  <span className='brand__sub'>
-                    Events Platform
-                  </span>
+                <span className='brand__label'>
+                  Events Platform
                 </span>
               </Link>
               <p className='mt-5' style={{ color: 'rgba(255,255,255,.6)', maxWidth: '40ch' }}>

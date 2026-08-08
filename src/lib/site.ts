@@ -13,7 +13,9 @@ export const site = {
   description:
     'Elets Technomedia has convened 1,000+ conferences, 20,000+ speakers and 600,000+ delegates across governance, healthcare, education, BFSI, AI, smart cities and energy.',
   tagline: "India's stage for governance, health, education and BFSI",
-  logo: '/assets/img/brand/logo.svg',
+  // Structured-data logo: search results render it on white, so this is the
+  // near-black-ink variant rather than the white-on-transparent original.
+  logo: '/assets/img/brand/lockup-on-light.png',
   twitter: '@eletsonline',
   email: 'registration@eletsonline.com',
   phone: '+91 92899 55093',

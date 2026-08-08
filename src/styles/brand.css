@@ -1,0 +1,110 @@
+/* ==========================================================================
+   BRAND LOCKUP
+   --------------------------------------------------------------------------
+   The theme was built around a 34×34 square mark sitting next to the words
+   "Elets / Events Platform". The real artwork is a horizontal lockup that
+   already contains the wordmark, so `.brand img` is re-sized here and the
+   duplicate "Elets" is dropped from the markup.
+
+   Two decisions worth keeping:
+
+   · Two files per variant, not one file plus a CSS filter. The artwork is
+     white ink plus brand red (#ee3248); the theme's --logo-filter uses
+     invert(), which would swing that red to cyan. The -on-light files carry
+     the same red with near-black ink instead. The suffix names the surface
+     the file is drawn for, not the colour of its ink.
+
+   · The lockup is shown whole, URL line included. That line is only ~11px of
+     the 68px source, so the lockup has to be tall enough for it to survive:
+     at 52px it renders ~8.4px and reads cleanly. Sizes below step down with
+     --nav-h so the logo keeps the same breathing room in a shorter bar.
+
+   Loaded after responsive.css, so these overrides win without !important.
+   ========================================================================== */
+
+.brand__lockup {
+  display: block;
+  width: auto;
+  border-radius: 0;
+}
+
+/* Beats `.brand img { width: 34px; height: 34px }` on specificity. */
+.brand img.brand__lockup {
+  width: auto;
+  height: 52px; /* in a 76px bar */
+  border-radius: 0;
+}
+
+/* Surface-aware swap: light theme takes the near-black artwork, dark theme
+   the white one. The footer is a dark band in both themes and opts out. */
+.brand__lockup--on-dark {
+  display: none;
+}
+
+.brand__lockup--on-light {
+  display: block;
+}
+
+[data-theme='dark'] .brand__lockup--on-dark {
+  display: block;
+}
+
+[data-theme='dark'] .brand__lockup--on-light {
+  display: none;
+}
+
+.footer .brand__lockup--on-dark,
+[data-theme='dark'] .footer .brand__lockup--on-dark {
+  display: block;
+}
+
+.footer .brand__lockup--on-light,
+[data-theme='dark'] .footer .brand__lockup--on-light {
+  display: none;
+}
+
+/* The lockup says "elets"; this says which property you are on. */
+.brand__label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 500;
+  padding-left: 0.7rem;
+  border-left: 1px solid var(--line);
+  line-height: 1.1;
+}
+
+.footer .brand__label {
+  color: rgba(255, 255, 255, 0.55);
+  border-left-color: rgba(255, 255, 255, 0.16);
+}
+
+/* ── ≤ 1200px — nav drops to 70px ─────────────────────────────────────── */
+@media (max-width: 1200px) {
+  .brand img.brand__lockup {
+    height: 46px;
+  }
+
+  /* The menu is at its tightest here; the lockup already carries the name. */
+  .nav .brand__label {
+    display: none;
+  }
+}
+
+/* ── ≤ 640px — nav drops to 64px ──────────────────────────────────────── */
+@media (max-width: 640px) {
+  .brand img.brand__lockup {
+    height: 42px;
+  }
+
+  .brand__label {
+    display: none;
+  }
+}
+
+/* The footer has room regardless of the bar, so it keeps the readable size. */
+.footer .brand img.brand__lockup {
+  height: 52px;
+}

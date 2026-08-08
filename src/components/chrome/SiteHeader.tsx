@@ -79,12 +79,26 @@ export default function SiteHeader() {
     <>
       <header className="nav" id="nav">
         <div className="nav__inner">
+          {/* The lockup carries the name, so the link is labelled and both
+              images stay decorative — otherwise it announces twice. */}
           <Link className="brand" href="/" aria-label="Elets Events — home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/assets/img/brand/logo.svg" alt="" width="34" height="34" />
-            <span className="brand__name">
-              Elets<span className="brand__sub">Events Platform</span>
-            </span>
+            <img
+              className="brand__lockup brand__lockup--on-dark"
+              src="/assets/img/brand/lockup-on-dark.png"
+              alt=""
+              width="134"
+              height="68"
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className="brand__lockup brand__lockup--on-light"
+              src="/assets/img/brand/lockup-on-light.png"
+              alt=""
+              width="134"
+              height="68"
+            />
+            <span className="brand__label">Events Platform</span>
           </Link>
 
           <nav className="nav__menu" aria-label="Primary">

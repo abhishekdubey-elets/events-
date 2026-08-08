@@ -13,12 +13,8 @@ export default function manifest(): MetadataRoute.Manifest {
     lang: site.lang,
     categories: ['business', 'education', 'news'],
     icons: [
-      {
-        src: '/assets/img/brand/favicon.svg',
-        sizes: 'any',
-        type: 'image/svg+xml',
-        purpose: 'any',
-      },
+      { src: '/assets/img/brand/mark-96.png', sizes: '96x96', type: 'image/png', purpose: 'any' },
+      { src: '/assets/img/brand/mark-256.png', sizes: '256x256', type: 'image/png', purpose: 'any' },
     ],
   };
 }

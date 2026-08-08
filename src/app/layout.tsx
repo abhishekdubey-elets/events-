@@ -3,6 +3,7 @@ import '@/styles/styles.css';
 import '@/styles/components.css';
 import '@/styles/animations.css';
 import '@/styles/responsive.css';
+import '@/styles/brand.css';
 
 import { site, abs } from '@/lib/site';
 import { graph, organizationLd, websiteLd } from '@/lib/seo';
@@ -36,8 +37,11 @@ export const metadata: Metadata = {
   // No site-wide canonical: every route declares its own through pageMeta(),
   // and inheriting "/" would hand the 404 a canonical it should not have.
   icons: {
-    icon: [{ url: '/assets/img/brand/favicon.svg', type: 'image/svg+xml' }],
-    apple: [{ url: '/assets/img/brand/favicon.svg' }],
+    icon: [
+      { url: '/assets/img/brand/mark-96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/assets/img/brand/mark-256.png', sizes: '256x256', type: 'image/png' },
+    ],
+    apple: [{ url: '/assets/img/brand/mark-256.png', sizes: '256x256' }],
   },
   manifest: '/manifest.webmanifest',
   formatDetection: { telephone: false, address: false, email: false },
